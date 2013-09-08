@@ -1,0 +1,97 @@
+libuuid-perl (0.05-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Update my email address.
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * Import new upstream version (no code changes; closes: #676164)
+  * Rework debian/copyright. Fixes the following lintian warnings:
+    + out-of-date-copyright-format-uri
+    + obsolete-field-in-dep5-copyright
+    + ambiguous-paragraph-in-dep5-copyright
+    + copyright-refers-to-symlink-license
+  * Bump debhelper compatibility to 9
+    + Update versioned debhelper build-dependency accordingly
+    + Fixes lintian warning hardening-no-relro
+  * Bump Standards-Version to 3.9.4 (no further changes)
+  * Add the general description of libuuid from the uuid-dev package to
+    the long description. Fixes the lintian warning
+    extended-description-is-probably-too-short.
+  * Bump debhelper build-dependency to >= 9.20120312 (fixes pkg-perl
+    specific lintian warning arch-any-package-needs-newer-debhelper)
+  * Add lintian override for conflicts-with-version since the big hammer
+    in the previous upload was on purpose.
+  * Add myself to Uploaders and debian/copyright.
+  * Apply wrap-and-sort.
+
+ -- Axel Beckert <abe@debian.org>  Sun, 08 Sep 2013 19:01:53 +0200
+
+libuuid-perl (0.02-5) unstable; urgency=low
+
+  * debian/control: conflict on doc-base << 0.10.3 to avoid package
+    installation failure due to symbol lookup errors when perl 5.14 and
+    libuuid-perl get unpacked and trigger the old doc-base.
+    Thanks to Martin Pitt for testing this in Ubuntu, Niko Tyni for the
+    initial analysis, and Stuart Prescott for further triaging.
+    (Closes: #652638) (LP: #902553)
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 14 Oct 2012 18:09:59 +0200
+
+libuuid-perl (0.02-4) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+  * debian/control: remove Clint Adams from Uploaders at his request.
+  * debian/control: change my email address.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * Use debhelper.
+  * Depend on perl-base instead of the full perl package. (Closes: #588427)
+  * debian/control: Make build-dep on perl unversioned.
+  * Use source format 3.0 (quilt).
+  * Convert debian/copyright to proposed machine-readable format.
+  * Bump Standards-Version to 3.9.0.
+  * Add myself to Uploaders.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Thu, 08 Jul 2010 18:24:23 +0900
+
+libuuid-perl (0.02-3) unstable; urgency=low
+
+  * debian/watch: use dist-based URL.
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * debian/rules:
+    - fix removal of /usr/share/perl5 in debian/rules (closes: #463440)
+    - install upstream changelog
+    - move tests to build-stamp target
+    - let install-stamp depend on build-stamp
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Sun, 03 Feb 2008 20:53:33 +0100
+
+libuuid-perl (0.02-2) unstable; urgency=low
+
+  * Fix FTBFS with perl 5.10 (rules could not cope with a non-broken
+    MakeMaker).  closes: #463440.
+  * Bump to Standards-Version 3.7.3.
+  * Set maintainer to Debian Perl Group.
+
+ -- Clint Adams <schizo@debian.org>  Thu, 31 Jan 2008 13:58:45 -0500
+
+libuuid-perl (0.02-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Clint Adams <schizo@debian.org>  Thu,  4 Jan 2007 13:39:39 -0500
