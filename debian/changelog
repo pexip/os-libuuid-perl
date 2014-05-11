@@ -1,6 +1,7 @@
 libuuid-perl (0.05-1pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging
+  * debian/control: Relax debhelper build-dep
 
  -- John-Mark Bell <jmb@pexip.com>  Sun, 11 May 2014 18:28:57 +0000
 
