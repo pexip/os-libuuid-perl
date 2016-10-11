@@ -1,31 +1,32 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Contact: Peter Braam <braam@clusterfs.com>
-Source: https://metacpan.org/release/UUID/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: UUID
+Upstream-Contact: Rick Myers <jrm@cpan.org>
+Source: https://metacpan.org/release/UUID
 
 Files: *
 Copyright: 2001, Peter Braam <braam@clusterfs.com>
+ 2014-2016, Rick Myers <jrm@cpan.org>
 License: Artistic
-X-Comment:
+Comment:
   Date: Thu, 04 Jan 2007 15:09:45 -0700
   From: Peter Braam <braam@clusterfs.com>
   To: Clint Adams <schizo@debian.org>
   Subject: Re: UUID license
-  .
+ .
   Hi,
-  .
+ .
   I haven't worked on this for a while.  i am quite happy to give it the
   Perl Artistic License, but remember that it links with libext2 which
   might be GPL.
-  .
+ .
   - Peter -
 
 Files: debian/*
-Copyright:
- 2007-2008, Clint Adams <schizo@debian.org>
- 2008,      gregor herrmann <gregoa@debian.org>
- 2010,      Ansgar Burchardt <ansgar@debian.org>
- 2013,      Axel Beckert <abe@debian.org>
+Copyright: 2007-2008, Clint Adams <schizo@debian.org>
+ 2008-2016  gregor herrmann <gregoa@debian.org>
+ 2010, Ansgar Burchardt <ansgar@debian.org>
+ 2013, 2015, Axel Beckert <abe@debian.org>
+ 2016, Angel Abad <angel@debian.org>
 License: Artistic or GPL-1+
 
 License: Artistic

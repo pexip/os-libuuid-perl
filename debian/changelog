@@ -1,3 +1,59 @@
+libuuid-perl (0.27-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Angel Abad ]
+  * New upstream version 0.27
+  * debian/copyright:
+    + Update years.
+    + Migrate X-Comment to Comment.
+
+ -- Angel Abad <angel@debian.org>  Tue, 11 Oct 2016 10:24:48 +0200
+
+libuuid-perl (0.26-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop workaround for Makefile.PL from debian/rules, fixed upstream.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 07 May 2016 15:40:38 +0200
+
+libuuid-perl (0.25-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Update years of upstream and packaging copyright.
+  * Work around a Makefile.PL problem in debian/rules.
+  * Set bindnow linker flag in debian/rules.
+  * Drop Conflicts on ancient doc-base.
+    Oldstable already has a newer version.
+    Drop corresponding lintian override as well.
+  * Declare compliance with Debian Policy 3.9.8.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 06 May 2016 19:58:51 +0200
+
+libuuid-perl (0.24-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Axel Beckert ]
+  * Import new upstream release
+    + Add new build-dependency libdevel-checklib-perl.
+    + Ships much improved POD (Closes: #719186)
+  * Declare compliance with Debian Policy 3.9.6 (no changes needed)
+  * Add "Testsuite: autopkgtest-pkg-perl" header.
+
+ -- Axel Beckert <abe@debian.org>  Sun, 26 Apr 2015 03:59:26 +0200
+
 libuuid-perl (0.05-1) unstable; urgency=low
 
   [ Ansgar Burchardt ]
