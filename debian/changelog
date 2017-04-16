@@ -1,3 +1,9 @@
+libuuid-perl (0.05-1pexip2) pexip; urgency=low
+
+  * Resync with Debian
+
+ -- John-Mark Bell <jmb@pexip.com>  Sun, 16 Apr 2017 23:29:12 +0100
+
 libuuid-perl (0.05-1pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging
