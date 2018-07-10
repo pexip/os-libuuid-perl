@@ -1,1 +1,0 @@
-libuuid-perl: conflicts-with-version doc-base (<< 0.10.3)

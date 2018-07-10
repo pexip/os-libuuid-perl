@@ -2,6 +2,7 @@ Source: libuuid-perl
 Section: perl
 Priority: optional
 Build-Depends: debhelper (>= 9.20120312~),
+               libdevel-checklib-perl,
                perl,
                uuid-dev
 Maintainer: Pexip AS <packaging@pexip.com>
@@ -9,10 +10,11 @@ XSBC-Pexip-Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.al
 XSBC-Pexip-Original-Uploaders: gregor herrmann <gregoa@debian.org>,
            Ansgar Burchardt <ansgar@debian.org>,
            Axel Beckert <abe@debian.org>
-Standards-Version: 3.9.4
-Homepage: https://metacpan.org/release/UUID/
-Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libuuid-perl.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libuuid-perl.git
+Standards-Version: 3.9.8
+Homepage: https://metacpan.org/release/UUID
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libuuid-perl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libuuid-perl.git
+Testsuite: autopkgtest-pkg-perl
 XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: libuuid-perl
@@ -20,7 +22,6 @@ Architecture: any
 Depends: ${misc:Depends},
          ${perl:Depends},
          ${shlibs:Depends}
-Conflicts: doc-base (<< 0.10.3)
 Description: Perl extension for using UUID interfaces as defined in e2fsprogs
  libuuid generates and parses 128-bit universally unique ids (UUIDs).
  See RFC 4122 for more information.
