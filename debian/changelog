@@ -1,3 +1,9 @@
+libuuid-perl (0.27-1pexip1) pexip; urgency=medium
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 10 Jul 2018 11:23:24 +0000
+
 libuuid-perl (0.27-1) unstable; urgency=medium
 
   * Team upload.
